@@ -11,3 +11,17 @@ function reverseFunction (arg) {
 reverseFunction('hello')
 reverseFunction('do this too')
 reverseFunction([1, 2, 3, 5, 3, 6])
+
+// using while loop
+function newReverse (args) {
+    let result = ''
+    let i = args.length - 1
+    while (i >= 0) {
+        result += args[i]
+        i--
+    }
+    console.log(result)
+}
+
+newReverse('ABCD')
+newReverse('try this with while loop')
